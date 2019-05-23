@@ -6,8 +6,9 @@ Capture the video's specific duration and save it as .png file
 Add the DLL in the x64/release directory
 ```C++
 #pragma comment (lib, "Thumbnail.lib")
+extern "C" __declspec (dllimport) int mkthumbnail(CString, CString, int, int, int);
 
-int mkthumbnail(CString sourceFolder, Cstring dstFolder, int pngHeight, int pngWidth, int durationToCapture);
+int nrtn = mkthumbnail(sourceFolder, dstFolder, pngHeight, pngWidth, durationToCapture);
 ```
 
 All the videos in the source folder will be captured.
