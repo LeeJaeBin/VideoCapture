@@ -8,7 +8,7 @@ Add the DLL and lib in the x64/release directory.
 #pragma comment (lib, "Thumbnail.lib")
 extern "C" __declspec (dllimport) int mkthumbnail(CString, CString, int, int, int);
 
-int nrtn = mkthumbnail(sourceFolder, dstFolder, pngHeight, pngWidth, durationToCapture);
+int nrtn = mkthumbnail(sourceFolder, dstFolder, TimeToCapture, pngWidth, pngHeight);
 ```
 
 All the videos in the source folder will be captured.
