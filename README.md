@@ -1,4 +1,4 @@
-# VideoCapture
+# VideoCapture DLL
 Capture the video's specific duration and save it as .png file
 
 ## How to use
