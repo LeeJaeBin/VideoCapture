@@ -3,7 +3,7 @@ Capture the video's specific duration and save it as .png file
 
 ## How to use
 
-Add the DLL in the x64/release directory
+Add the DLL and lib in the x64/release directory.
 ```C++
 #pragma comment (lib, "Thumbnail.lib")
 extern "C" __declspec (dllimport) int mkthumbnail(CString, CString, int, int, int);
